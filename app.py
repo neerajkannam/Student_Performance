@@ -3,7 +3,7 @@ import pickle
 import os
 
 # Load the trained model once during startup
-MODEL_PATH = (r"C:\Users\Neeraj\OneDrive\Pictures\Student_Performance\model.pickle")
+MODEL_PATH = (r"./model.pickle")
 if os.path.exists(MODEL_PATH):
     with open(MODEL_PATH, "rb") as model_file:
         model = pickle.load(model_file)
